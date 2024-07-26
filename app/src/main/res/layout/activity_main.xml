@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:weightSum="10">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="Search Movies"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold" />
+
+    <SearchView
+        android:id="@+id/searchMovie"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:padding="4dp"
+        android:queryHint="Search here" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recMovieList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:layout_weight="8.5"
+        android:padding="4dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
